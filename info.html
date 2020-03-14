@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>info - e_design</title>
+		<meta charset="UTF-8">
+
+    <!-- EXTERNAL STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+      /* Paragraph font style & size */
+      p { font-size: 25px; font-weight: bold; line-height: 100%; color: #dddddd; margin: 30px }
+
+			/* List styling */
+			ul { font-size: 25px; font-weight: bold; line-height: 150%; color: #dddddd; margin: 30px }
+
+			/* Container size */
+      #container { width: 900px; height: 1200px; margin: 0 auto; background-color: black; opacity: 1.0 }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover { background-color: black; color: #E7C222; text-decoration: none; }
+
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus { background-color: black; color: #E7C222 }
+
+    </style>
+
+  </head>
+
+<body>
+<!-- START CONTAINER -->
+<div id="container">
+    <div id="header">
+            <a href="index.html">
+						<img class="logo" src="images/e_design_logo.png" alt="E_Design Logo">
+						</a>
+
+					<!-- DROPDOWN NAVIGATION -->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">menu</button>
+							<div id="myDropdown" class="dropdown-content"> <!-- DROPDOWN CONTENT -->
+								<a href="about.html">about</a>
+								<a href="e-commerce.html">e-commerce</a>
+								<a href="daysoft.html">daysoft</a>
+								<a href="gallery.html">gallery</a>
+								<a href="contact.html">contact</a>
+								<a href="documentation.html">docs</a>
+								<a href="info.html">info</a>
+							</div><!-- END DROPDOWN CONTENT` -->
+					</div><!-- END DROPDOWN NAVIGATION -->
+		</div><!-- END HEADER -->
+
+<br>
+
+<!-- LIST -->
+<p>Criteria:
+<ul>
+  <li>Text - on all pages</li>
+  <li>Images - on all pages as background. On "Gallery" page as slideshow</li>
+  <li>Video - on the "Daysoft" page</li>
+  <li>Audio - on the "Daysoft" page</li>
+	<li>Table - on the "E-Commerce" page</li>
+	<li>List - on the "E-Commerce" page</li>
+  <li>Form - on the "Contact" page</li>
+  <li>Form Elements - name field, email field, text area, select box, file upload, submit button</li>
+  <li>CSS Layouts - external style sheet "styles.css" with a number of elements, applied to all pages for consistency. Includes layout of header: logo and dropdown navigation</li>
+  <li>CSS Styles External - external style sheet "styles.css" applied to all pages. Includes properties for 3+ elements</li>
+  <li>CSS Styles Internal - internal style sheet on "E-Commerce" page for table. Includes properties for 2+ elements</li>
+  <li>CSS Styles Other - internal styles on "E-Commerce" page for list. Internal styles on "Index" page for "Discover" button</li>
+  <li>JavaScript 1 - external JavaScript in "slideshow.css" for slideshow images on "Gallery" page</li>
+  <li>JavaScript 2 - internal JavaScript for displaying the date on the "Contact" page</li>
+  <li>JavaScript 3 - external JavaScript in "dropdown.js" for the dropdown navigation and linked to all pages</li>
+
+</ul>
+</p> <!-- END LIST -->
+
+</div> <!-- END CONTAINER -->
+
+
+<!-- EXTERNAL JAVASCRIPT -->
+<script src="dropdown.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>about - e_design</title>
+		<meta charset="UTF-8">
+
+    <!-- EXTERNAL STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+      /* Paragraph font style & size */
+      p { font-size: 25px; font-weight: bold; line-height: 90%; color: white; display: inline;}
+
+      /* "Quote" button style */
+      .button { box-shadow: 0px 7px 40px black; color: black; background-color: #C8442A; border: 0; font-size: 15px;
+      padding: 30px; border-radius: 25px; font-weight: bold; display: block; margin: auto; width: 200px; margin-top: 60px; }
+
+      /* "Quote" button style on hover */
+      .button:hover { background-color: #B53826; cursor: pointer; }
+
+      /* "Quote" button on click - disable default outline */
+      .button:focus { outline: 0 }
+
+      #container { width: 900px; height: 1900px; margin: 0 auto; background-color: black; opacity: 1.0 }
+
+    </style>
+
+  </head>
+
+<!-- BACKGROUND IMAGE -->
+<body background="images/business.jpg">
+
+<body>
+<!-- START CONTAINER -->
+<div id="container">
+    <div id="header">
+            <a href="index.html">
+						<img class="logo" src="images/e_design_logo.png" alt="E_Design Logo">
+						</a>
+
+					<!-- DROPDOWN NAVIGATION -->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">menu</button>
+							<div id="myDropdown" class="dropdown-content"> <!-- DROPDOWN CONTENT -->
+								<a href="about.html">about</a>
+								<a href="e-commerce.html">e-commerce</a>
+								<a href="daysoft.html">daysoft</a>
+								<a href="gallery.html">gallery</a>
+								<a href="contact.html">contact</a>
+								<a href="documentation.html">docs</a>
+								<a href="info.html">info</a>
+							</div><!-- END DROPDOWN CONTENT` -->
+					</div><!-- END DROPDOWN NAVIGATION -->
+		</div><!-- END HEADER -->
+
+    <!-- START TEXT -->
+    <div id="article">
+    <h2>
+    <br>
+    This website demonstrates the importance of web development for e-commerce businesses in today's online marketplace.
+  	</h2>
+  	<p>
+    Website development can include anything from simply programming the data of a website to adding content, network security and web server configuration, e-commerce development and more. It usually ranges from creating the simplest, plain text to the most difficult web-based applications, social network services and electronic business. Some website developers incorporate design into their web building, while others leave it strictly at coding and writing mark-up. It should go without saying that the better a website looks, the more visitors it will attract, so it's worthwhile to focus on the design aspects as well as the coding when developing your website. The content should accurately depict what your service provides and be geared towards enticing the site's visitors, in order to keep them engaged.
+    <br><br>
+    Images are also really important. They enhance the impact of your website, especially the homepage, and they also help to reinforce the theme. For this website, the images I have chosen have been inspired by photography - often simple with a contrasting colour which can be picked out and used elsewhere on the page.
+    <br><br>
+    Colour schemes are vital - as they can become the trademark of your company. Daysoft's colour scheme is an example of this. The contrasting yellow and blue logo features regularly on the website, and even trickles down to the packaging on their products.
+    <br><br>
+    <img src="images/daysoft.jpg" style="width:840px" alt="Daysoft Homepage">
+    <br><br>
+    Check out our gallery for other examples of websites which not only look good, but function well.
+
+    </div> <!-- END TEXT -->
+
+</div> <!-- END CONTAINER -->
+
+
+<!-- EXTERNAL JAVASCRIPT -->
+<script src="dropdown.js"></script>
+
+</body>
+</html>

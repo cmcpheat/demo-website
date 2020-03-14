@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>gallery - e_design</title>
+		<meta charset="UTF-8">
+
+    <!-- EXTERNAL STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+		<link rel="stylesheet" href="slideshow.css" type="text/css">
+
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+			/* Override font size */
+			html { font-family: arial; color: white; font-size: 25px; }
+
+			/* Container size */
+      #container { width: 900px; height: 900px; margin: 0 auto; background-color: black; opacity: 1.0 }
+
+			/* Heading size and colour */
+			h2 { font-size: 40px; margin-left: 30px; color: #dddddd }
+
+			/* Change color of dropdown links on hover */
+			.dropdown-content a:hover { background-color: black; color: #F3BA8F; text-decoration: none; }
+
+			/* Dropdown button on hover & focus */
+			.dropbtn:hover, .dropbtn:focus { background-color: black; color: #F3BA8F }
+
+    </style>
+
+  </head>
+
+<!-- BACKGROUND IMAGE -->
+<body background="images/contact.jpg">
+
+<body>
+<!-- START CONTAINER -->
+<div id="container">
+    <div id="header">
+            <a href="index.html">
+						<img class="logo" src="images/e_design_logo.png" alt="E_Design Logo">
+						</a>
+
+					<!-- DROPDOWN NAVIGATION -->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">menu</button>
+							<div id="myDropdown" class="dropdown-content"> <!-- DROPDOWN CONTENT -->
+								<a href="about.html">about</a>
+								<a href="e-commerce.html">e-commerce</a>
+								<a href="daysoft.html">daysoft</a>
+								<a href="gallery.html">gallery</a>
+								<a href="contact.html">contact</a>
+								<a href="documentation.html">docs</a>
+								<a href="info.html">info</a>
+							</div><!-- END DROPDOWN CONTENT` -->
+					</div><!-- END DROPDOWN NAVIGATION -->
+		</div><!-- END HEADER -->
+
+
+<br><br>
+<h2>Gallery and Inspiration.</h2>
+<br>
+
+		<!-- ___ START SLIDESHOW ___ -->
+
+					 <!-- ___ SCREENSHOT IMAGES ___ -->
+					 <div class="slideshow-container">
+					 <div class="mySlides fade">
+					 <img src="images/screenmedia.jpg" style="width:100%" alt="Screenmedia">
+					 <div class="caption">1. Screenmedia</div>
+					 </div>
+
+					 <div class="mySlides fade">
+					 <img src="images/dropbox.jpg" style="width:100%" alt="DropBox">
+					 <div class="caption">2. DropBox</div>
+					 </div>
+
+					 <div class="mySlides fade">
+					 <img src="images/stackoverflow.jpg" style="width:100%" alt="Stack Overflow">
+					 <div class="caption">3. Stack Overflow</div>
+					 </div>
+
+					 <div class="mySlides fade">
+					 <img src="images/usa_today.jpg" style="width:100%" alt="Index Page CSS Code">
+					 <div class="caption">4. USA Today</div>
+					 </div>
+
+					 <div class="mySlides fade">
+					 <img src="images/airbnb.jpg" style="width:100%" alt="Index Page CSS Code">
+					 <div class="caption">5. Airbnb</div>
+					 </div>
+
+					 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+				 </div> <!-- ___ END SLIDESHOW ___ -->
+
+</div> <!-- END CONTAINER -->
+
+
+<!-- EXTERNAL JAVASCRIPT -->
+<script src="dropdown.js"></script>
+
+<!-- ___ START JAVASCRIPT ___ SLIDESHOW ___ -->
+
+<script>
+		var slideIndex = 1; showSlides(slideIndex);
+
+		function plusSlides(n) { showSlides(slideIndex += n); }
+
+		function currentSlide(n) { showSlides(slideIndex = n); }
+
+		function showSlides(n) { var i;
+  		var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+  		if (n > slides.length) {slideIndex = 1}
+  		if (n < 1) {slideIndex = slides.length}
+  		for (i = 0; i < slides.length; i++) {
+      		slides[i].style.display = "none"; }
+  		for (i = 0; i < dots.length; i++) {
+      		dots[i].className = dots[i].className.replace(" active", ""); }
+  				slides[slideIndex-1].style.display = "block";
+  				dots[slideIndex-1].className += " active"; }
+</script>
+
+<!-- ___ END JAVASCRIPT ___ SLIDESHOW ___ -->
+
+</body>
+</html>

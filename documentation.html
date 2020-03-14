@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>docs - e_design</title>
+		<meta charset="UTF-8">
+
+    <!-- EXTERNAL STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+      /* Paragraph font style & size */
+      p { font-size: 25px; font-weight: bold; line-height: 100%; color: #dddddd; margin: 30px }
+
+			/* List styling */
+			ul { font-size: 25px; font-weight: bold; line-height: 120%; color: #dddddd; margin: 30px }
+
+			/* Container size */
+      #container { width: 900px; height: 1900px; margin: 0 auto; background-color: black; opacity: 1.0 }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover { background-color: black; color: #E7C222; text-decoration: none; }
+
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus { background-color: black; color: #E7C222 }
+
+    </style>
+
+  </head>
+
+<body>
+<!-- START CONTAINER -->
+<div id="container">
+    <div id="header">
+            <a href="index.html">
+						<img class="logo" src="images/e_design_logo.png" alt="E_Design Logo">
+						</a>
+
+					<!-- DROPDOWN NAVIGATION -->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">menu</button>
+							<div id="myDropdown" class="dropdown-content"> <!-- DROPDOWN CONTENT -->
+								<a href="about.html">about</a>
+								<a href="e-commerce.html">e-commerce</a>
+								<a href="daysoft.html">daysoft</a>
+								<a href="gallery.html">gallery</a>
+								<a href="contact.html">contact</a>
+								<a href="documentation.html">docs</a>
+								<a href="info.html">info</a>
+							</div><!-- END DROPDOWN CONTENT` -->
+					</div><!-- END DROPDOWN NAVIGATION -->
+		</div><!-- END HEADER -->
+
+<br>
+
+
+<!-- SUMMARY LIST -->
+<p>Summary:
+<ul>
+	<li>My website was created using the HTML, CSS and JavaScript languages</li>
+	<li>I used the 'Atom' editor to do the code, as this editor can work with all three languages</li>
+	<li>I used W3 Schools for help as well as the modules and labs covered in class</li>
+	<li>I sourced royalty free images from Pixabay</li>
+	<li>I sourced the audio from my company, and the video from my company's YouTube page</li>
+</ul>
+</p>
+
+<br>
+
+<!-- ACCESSIBILITY LIST -->
+<p>Accessibility:
+<ul>
+	<li>I created the dropdown navigation for easy accessibility of each page</li>
+	<li>The logo at the top left can be clicked at any time to go back to the homepage (index)</li>
+	<li>The form in my 'Contact' page is very clear and easy to use</li>
+	<li>I changed the layout slightly from how I'd originally planned to display the website.
+    I made the content narrower and in the centre, to ensure that when the display settings are scaled down, the webpages are still readable and look good.</li>
+	<li>The website is best viewed on a widescreen display at 100% in the browser.
+    However, if a narrower screen is used, zooming out on the browser to roughly 50% or 70% will display the webpages in full.</li>
+  <li>The font sizes are big enough for everyone to read.</li>
+  <li>The text colour contrasts against the background of all pages, making it very clear and easy to understand.</li>
+	<li>The homepage has a 'Discover' button which takes the user to the 'About' page. I was inspired by other websites that have similar features on their homepages.
+		This allows the user to jump straight into the information with the click of a button.</li>
+</ul>
+</p>
+
+<br>
+
+<!-- SECURITY LIST -->
+<p>Security:
+<ul>
+	<li>One thing to take into consideration is form submissions. Although my form does not export data to a server or database, if I were to set it up this way I would ensure to encrypt the data.
+		This would be done by submitting the data via https rather than http. That way, the "e_design" orgranisation would be able to protect its customers' information.</li>
+	<li>To have a secure website, you need to protect against malicious code. Hackers can inject mailicious JavaScript into websites, so things need to be put in place to stop it.
+		There are tools which can be implemented to enforce what code is allowed to run on your page, such as Content Security Policy (CSP).</li>
+	<li>I have implemented form validation, which means only certain strings of text can be inserted. Hackers can inject malicious code into databases by entering text into forms.
+		By ensuring you control the type of data that is entered, you can stop malicious code being sent to your database or server.</li>
+</ul>
+</p>
+
+</div> <!-- END CONTAINER -->
+
+
+<!-- EXTERNAL JAVASCRIPT -->
+<script src="dropdown.js"></script>
+
+</body>
+</html>

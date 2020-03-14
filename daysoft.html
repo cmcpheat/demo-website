@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>daysoft - e_design</title>
+		<meta charset="UTF-8">
+
+    <!-- EXTERNAL STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+      /* Paragraph font style & size */
+      p { font-size: 30px; font-weight: bold; line-height: 90%; color: #54adf7; display: inline;}
+
+			/* URL colour or decoration - override default */
+      a { color: white; text-decoration: none; }
+
+			/* URL hover styling */
+      a:hover { color: white; text-decoration: underline; }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover { background-color: black; color: #8F892B; text-decoration: none; }
+
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus { background-color: black; color: #8F892B }
+
+    </style>
+
+  </head>
+
+<!-- BACKGROUND IMAGE -->
+<body background="images/scotland.jpg">
+
+<body>
+<!-- START CONTAINER -->
+<div id="container">
+    <div id="header">
+            <a href="index.html">
+						<img class="logo" src="images/e_design_logo.png" alt="E_Design Logo">
+						</a>
+
+					<!-- DROPDOWN NAVIGATION -->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">menu</button>
+							<div id="myDropdown" class="dropdown-content"> <!-- DROPDOWN CONTENT -->
+								<a href="about.html">about</a>
+								<a href="e-commerce.html">e-commerce</a>
+								<a href="daysoft.html">daysoft</a>
+								<a href="gallery.html">gallery</a>
+								<a href="contact.html">contact</a>
+								<a href="documentation.html">docs</a>
+								<a href="info.html">info</a>
+							</div><!-- END DROPDOWN CONTENT -->
+					</div><!-- END DROPDOWN NAVIGATION -->
+		</div><!-- END HEADER -->
+
+    <!-- START TEXT -->
+    <div id="article">
+
+			<!-- AUDIO -->
+			<audio controls>
+	  		<source src="daysoft_story.mp3" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+
+			<p>
+			<br>
+      <br>
+      Daysoft are a company based in Blantyre, Scotland. They manufacture contact lenses in-house and ship them worldwide from their factory in Scotland.
+      In order to meet the demands of of their customer base, Daysoft have had to develop a functional, well designed website in a variety of languages,
+      which can be accessed by customers from around 104 different countries. You can check out their website <a href="https://www.daysoft.com" target="_blank">here<br>
+      <br>
+
+
+      </p>
+    </div> <!-- END TEXT -->
+    <!-- ___ DAYSOFT VIDEO ___ -->
+
+    <iframe id="video" src="https://www.youtube.com/embed/_5_aUSvD9HI?controls=0" frameborder="0" allowfullscreen style="width:100%;height:60%">
+    </iframe>
+
+</div> <!-- END CONTAINER -->
+
+<!-- EXTERNAL JAVASCRIPT -->
+<script src="dropdown.js"></script>
+
+</body>
+</html>

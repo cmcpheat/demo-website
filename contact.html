@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>contact - e_design</title>
+		<meta charset="UTF-8">
+
+    <!-- EXTERNAL STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+			html { font-family: arial; color: white; font-size: 20px; }
+
+      /* Paragraph font style & size */
+      p { font-size: 20px; font-weight: bold; line-height: 100%; color: #dddddd; display: inline; margin: 80px }
+
+			/* Container size */
+      #container { width: 900px; height: 800px; margin: 0 auto; background-color: black; }
+
+    </style>
+
+  </head>
+
+<!-- BACKGROUND IMAGE -->
+<body background="images/smartphone.jpg">
+
+<body>
+<!-- START CONTAINER -->
+<div id="container">
+    <div id="header">
+            <a href="index.html">
+						<img class="logo" src="images/e_design_logo.png" alt="E_Design Logo">
+						</a>
+
+						<!-- DROPDOWN NAVIGATION -->
+						<div class="dropdown">
+							<button onclick="myFunction()" class="dropbtn">menu</button>
+								<div id="myDropdown" class="dropdown-content"> <!-- DROPDOWN CONTENT -->
+									<a href="about.html">about</a>
+									<a href="e-commerce.html">e-commerce</a>
+									<a href="daysoft.html">daysoft</a>
+									<a href="gallery.html">gallery</a>
+									<a href="contact.html">contact</a>
+									<a href="documentation.html">docs</a>
+									<a href="info.html">info</a>
+								</div><!-- END DROPDOWN CONTENT` -->
+						</div><!-- END DROPDOWN NAVIGATION -->
+		</div><!-- END HEADER -->
+
+			<br>
+			<p>We aim to get back to you within three working days.</p><br>
+
+			<!-- DISPLAY DATE ___ JAVASCRIPT AT BOTTOm -->
+			<p id="date"></p>
+
+			<br>
+
+			<!-- START FORM -->
+			<!-- FORM SUBMIT MESSAGE -->
+			<form method="post" onSubmit="alert('Thank you for your message. We will be in touch shortly!');">
+
+			<!-- FORM STYLING CLASS -->
+    	<fieldset class="form">
+
+			<!-- FIRST NAME FIELD -->
+    	<input required type="text" name="First name" style="width:700px" placeholder="First Name:">
+
+			<br>
+
+			<!-- LAST NAME FIELD -->
+    	<input required type="text" name="Last name" style="width:700px" placeholder="Last Name:">
+
+			<br>
+
+			<!-- EMAIL FIELD -->
+			<input required type="email" name="email" style="width:700px" placeholder="Email:">
+
+			<br>
+
+	 		<!-- INDUSTRY SELECT BOX -->
+	 		Industry:
+	 			<select required name="Industry">
+   				<option value="" selected>Select</option>
+   				<option value="Advertising">Advertising</option>
+   				<option value="Banking">Banking</option>
+   				<option value="Construction">Construction</option>
+   				<option value="Education">Education</option>
+   				<option value="Fashion">Fashion</option>
+   				<option value="Financial Services">Financial Services</option>
+   				<option value="IT">Information Technology</option>
+	 				<option value="Media and Broadcasting">Media and Broadcasting</option>
+   				<option value="Pharmaceutical">Pharmaceutical</option>
+   				<option value="Technology">Technology</option>
+   				<option value="Telecommunications">Telecommunications</option>
+   				<option value="Video Games">Video Games</option>
+   				<option value="Web Services">Web Services</option>
+ 	 			</select>
+
+	 			<br>
+
+			<!-- MESSAGE FIELD -->
+    		<textarea required name="message" rows="100" cols="8" placeholder="Message:"></textarea>
+
+			<!-- SAMPLE UPLOAD -->
+    	Sample: <input type="file">
+
+			</fieldset>
+			<!-- END FORM STYLING -->
+
+			<!-- "SUMBIT" BUTTON -->
+			<button class="submit" onclick="submit">SUBMIT</button>
+
+		</form>
+		<!-- END FORM -->
+
+
+</div> <!-- END CONTAINER -->
+
+
+<!-- INTERNAL JAVASCRIPT ___ DISPLAY DATE -->
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+
+
+<!-- EXTERNAL JAVASCRIPT ___ DROPDOWN NAV -->
+<script src="dropdown.js"></script>
+
+</body>
+</html>

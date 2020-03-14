@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>home - e_design</title>
+		<meta charset="UTF-8">
+
+    <!-- EXTERNAL STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+      /* Paragraph font style & size */
+      p { font-size: 104px; font-weight: bold; line-height: 80%; color: #dddddd; display: inline;}
+
+      /* "Quote" button style */
+      .button { box-shadow: 0px 7px 40px black; color: black; background-color: #C8442A; border: 0; font-size: 15px;
+      padding: 30px; border-radius: 25px; font-weight: bold; display: block; margin: auto; width: 200px; margin-top: 60px; }
+
+      /* "Quote" button style on hover */
+      .button:hover { background-color: #B53826; cursor: pointer; }
+
+      /* "Quote" button on click - disable default outline */
+      .button:focus { outline: 0 }
+
+			/* Container size */
+      #container { width: 900px; height: 700px; margin: 0 auto; background-color: black; opacity: 0.9; border-radius: 15px }
+
+    </style>
+
+  </head>
+
+<!-- BACKGROUND IMAGE -->
+<body background="images/coffee.jpg">
+
+<body>
+<!-- START CONTAINER -->
+<div id="container">
+    <div id="header">
+            <a href="index.html">
+						<img class="logo" src="images/e_design_logo.png" alt="E_Design Logo">
+						</a>
+
+					<!-- DROPDOWN NAVIGATION -->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">menu</button>
+							<div id="myDropdown" class="dropdown-content"> <!-- DROPDOWN CONTENT -->
+								<a href="about.html">about</a>
+								<a href="e-commerce.html">e-commerce</a>
+								<a href="daysoft.html">daysoft</a>
+								<a href="gallery.html">gallery</a>
+								<a href="contact.html">contact</a>
+								<a href="documentation.html">docs</a>
+								<a href="info.html">info</a>
+							</div><!-- END DROPDOWN CONTENT` -->
+					</div><!-- END DROPDOWN NAVIGATION -->
+		</div><!-- END HEADER -->
+
+    <!-- START TEXT -->
+    <div id="article">
+      <p>
+      <br>
+      <br>
+         WEB        <br>
+         DEVELOPMENT<br>
+         FOR        <br>
+         BUSINESS   <br>
+      <br>
+      </p>
+    </div> <!-- END TEXT -->
+
+</div> <!-- END CONTAINER -->
+
+<!-- "QUOTE" BUTTON -->
+<button onclick="location.href='about.html'" class="button">DISCOVER</button>
+
+<!-- EXTERNAL JAVASCRIPT -->
+<script src="dropdown.js"></script>
+
+</body>
+</html>
